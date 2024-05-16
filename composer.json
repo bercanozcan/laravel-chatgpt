@@ -1,0 +1,36 @@
+{
+    "name": "bercanozcan/laravel-chatgpt",
+    "description": "The Laravel ChatGPT Package enables seamless integration of OpenAI's ChatGPT model into Laravel applications. This package provides developers with a straightforward solution for incorporating conversational AI capabilities into their Laravel projects.",
+    "homepage": "https://github.com/bercanozcan/laravel-chatgpt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bercan Özcan",
+            "email": "bercanozcan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bercanozcan\\Chatgpt\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bercanozcan\\Chatgpt\\ChatgptServiceProvider"
+            ],
+            "aliases": {
+                "Chatgpt": "Bercanozcan\\Chatgpt\\Facades\\Chatgpt"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
